@@ -31,7 +31,6 @@
                 k.outline(2),
                 k.area(),
                 k.body({ isStatic: true }),
-                "ground"
             ]);
 
             const player = k.add([
@@ -39,7 +38,6 @@
                 k.pos(100, 0),
                 k.area(),
                 k.body(),
-                "player"
             ]);
 
             k.add([
@@ -50,7 +48,6 @@
             const scoreText = k.add([
                 k.text("Score: 0", { size: 20 }),
                 k.pos(20, 60),
-                "scoreLabel"
             ]);
 
             k.onKeyPress("space", () => {
