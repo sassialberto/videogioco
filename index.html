@@ -14,7 +14,7 @@
         function startGame() {
             const k = kaplay({
                 width: 800,
-                height: 400,
+                height: 400
             });
 
             k.loadBean();
@@ -30,14 +30,14 @@
                 k.pos(0, k.height() - 48),
                 k.outline(2),
                 k.area(),
-                k.body({ isStatic: true }),
+                k.body({ isStatic: true })
             ]);
 
             const player = k.add([
                 k.sprite("bean"),
                 k.pos(100, 0),
                 k.area(),
-                k.body(),
+                k.body()
             ]);
 
             k.add([
@@ -72,8 +72,7 @@
                     k.outline(2),
                     k.pos(k.width(), k.height() - 48 - 64),
                     k.color(255, 0, 0),
-                    k.move(k.vec2(-1, 0), 200),
-                    "obstacle"
+                    k.move(k.vec2(-1, 0), 200)
                 ]);
 
                 obstacles.push(obstacle);
